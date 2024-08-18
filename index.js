@@ -6,7 +6,7 @@ const { Server } = require("socket.io");
 const path = require("path");
 
 const corsOptions = {
-  origin: "https://websocket-client-36ea.onrender.com",
+  origin: "https://websocket-client-vkiw.onrender.com",
   credentials: true,
   methods: ["GET", "POST"],
   optionsSuccessStatus: 200,
@@ -21,7 +21,7 @@ const server = http.createServer(app);
 const io = new Server(server, {
   addTrailingSlash: false,
   cors: {
-    origin: "https://websocket-client-36ea.onrender.com",
+    origin: "https://websocket-client-vkiw.onrender.com",
     methods: ["GET", "POST"],
     credentials: true,
   },
