@@ -19,7 +19,7 @@ app.use(cors(corsOptions));
 const server = http.createServer(app);
 
 const io = new Server(server, {
-  // addTrailingSlash: false,
+  addTrailingSlash: false,
   cors: {
     origin: "https://websocket-client-36ea.onrender.com",
     methods: ["GET", "POST"],
